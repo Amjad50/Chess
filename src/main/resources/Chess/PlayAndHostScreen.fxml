@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chess.Controllers.PlayAndHostScreenController">
+   <Label fx:id="errorScreen" textFill="RED" GridPane.halignment="CENTER" />
+   <TextField fx:id="port" disable="true" promptText="port" visible="false" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+      </TextField>
+   <CheckBox fx:id="customPort" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Use custom port" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+      <tooltip>
+         <Tooltip text="Off: The game will use the default port.&#10;On: You have to write you custom port." />
+      </tooltip>
+      <GridPane.margin>
+         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+      </GridPane.margin>
+   </CheckBox>
+   <HBox spacing="20.0" GridPane.rowIndex="3">
+      <children>
+          <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#connect" prefWidth="250.0" text="Connect" textAlignment="CENTER">
+              <font>
+                  <Font name="Alien Encounters" size="24.0" />
+              </font>
+          </Button>
+         <Button fx:id="startButton" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#start" prefWidth="250.0" text="Start" textAlignment="CENTER">
+            <font>
+               <Font name="Alien Encounters" size="24.0" />
+            </font>
+         </Button>
+      </children>
+      <GridPane.margin>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </GridPane.margin>
+   </HBox>
+   <Label fx:id="label" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+      <font>
+         <Font name="BN Machine" size="18.0" />
+      </font></Label>
+    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#back" prefWidth="250.0" text="Back" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+        <font>
+            <Font name="Alien Encounters" size="24.0" />
+        </font>
+        <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </GridPane.margin>
+    </Button>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,16 @@
+
+########################################
+####	IntellJIdea ignore files	####	
+########################################
+
+.gradle
+.idea
+build
+out
+src/test
+
+######################################
+####	Not needed in the code    ####	 
+######################################
+src/main/resources/Chess/pieces/*.ps1
+src/main/resources/Chess/pieces/*.jar

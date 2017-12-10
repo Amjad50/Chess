@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.*?>
+<StackPane fx:id="root" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chess.ChessController">
+    <FlowPane prefWidth="800" prefHeight="800">
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="cornsilk" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+        <Rectangle fill="brown" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0"/>
+    </FlowPane>
+    <Pane fx:id="piecesPlaceholder" prefWidth="800" prefHeight="800"/>
+    <FlowPane fx:id="grid" prefWidth="800" prefHeight="800"/>
+</StackPane>
