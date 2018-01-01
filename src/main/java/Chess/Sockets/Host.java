@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Host extends mySocket{
+public class Host extends generalSocket {
 	private ServerSocket serverSocket;
 	private PlayAndHostScreenController controller;
 

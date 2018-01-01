@@ -2,7 +2,7 @@ package Chess;
 
 import Chess.Sockets.Client;
 import Chess.Sockets.Host;
-import Chess.Sockets.mySocket;
+import Chess.Sockets.generalSocket;
 import javafx.animation.AnimationTimer;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
@@ -28,7 +28,7 @@ public class ChessController {
 	private StackPane root;
 	static boolean isSinglePlayer, isHost, canPlay;
 	private Scene chessScene;
-	private mySocket socket;
+	private generalSocket socket;
 	private ChessBoard board;
 	private InputStream inputStream;
 	private OutputStream outputStream;
@@ -49,7 +49,7 @@ public class ChessController {
 		return root;
 	}
 
-	public void init(boolean isSinglePlayer, boolean isHost, mySocket socket) {
+	public void init(boolean isSinglePlayer, boolean isHost, generalSocket socket) {
 		ChessController.isSinglePlayer = isSinglePlayer;
 		ChessController.isHost = isHost;
 		this.socket = socket;

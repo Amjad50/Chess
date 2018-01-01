@@ -2,7 +2,7 @@ package Chess.Sockets;
 
 import java.net.Socket;
 
-public class mySocket {
+public class generalSocket {
 	protected Socket socket;
 
 	public Socket getSocket(){

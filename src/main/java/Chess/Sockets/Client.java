@@ -2,11 +2,10 @@ package Chess.Sockets;
 
 import Chess.Controllers.PlayViaIPScreenController;
 import javafx.animation.AnimationTimer;
-import javafx.scene.control.Label;
 
 import java.net.Socket;
 
-public class Client extends mySocket{
+public class Client extends generalSocket {
 	private String ip;
 	private int port;
 	private PlayViaIPScreenController controller;
