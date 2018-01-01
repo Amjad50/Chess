@@ -16,7 +16,7 @@ public class Main extends Application {
 	}
 
 	private void loadMainStage(Stage primaryStage) throws IOException {
-		scene = new Scene(FXMLLoader.load(getClass().getResource("/ChessRecources/ScreenRoot.fxml")));
+		scene = new Scene(FXMLLoader.load(getClass().getResource("/Chess/ScreenRoot.fxml")));
 		primaryStage.setScene(scene);
 		primaryStage.sizeToScene();
 		primaryStage.setTitle("Chess");

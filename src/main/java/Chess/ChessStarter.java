@@ -15,7 +15,7 @@ public class ChessStarter {
 	private Parent root;
 
 	public void load(){
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/ChessRecources/ChessGame.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Chess/ChessGame.fxml"));
 		try {
 			root = loader.load();
 			controller = loader.getController();
