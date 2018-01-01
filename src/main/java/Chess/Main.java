@@ -22,7 +22,6 @@ public class Main extends Application {
 		primaryStage.setTitle("Chess");
 		primaryStage.sizeToScene();
 		primaryStage.setResizable(false);
-		System.out.println("aa");
 	}
 
 	public static void main(String... args) {
