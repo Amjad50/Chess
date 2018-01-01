@@ -26,7 +26,7 @@ public class ScreenRootController {
 		((Controller)loader.getController()).init(this);
 		loader = new FXMLLoader(getClass().getResource("/Chess/MultiPlayerScreen.fxml"));
 		gridPanes[1] = loader.load();
-		System.out.println("done 1");
+		System.out.println("done 1" + System.getProperty("java.class.path"));
 		((Controller)loader.getController()).init(this);
 		loader = new FXMLLoader(getClass().getResource("/Chess/PlayAndHostScreen.fxml"));
 		gridPanes[2] = loader.load();
