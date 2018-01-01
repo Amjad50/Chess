@@ -1,11 +1,9 @@
 package Chess;
 
-import Chess.Controllers.ScreenRootController;
 import Chess.Sockets.mySocket;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -17,7 +15,7 @@ public class ChessStarter {
 	private Parent root;
 
 	public void load(){
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Chess/ChessGame.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/ChessRecources/ChessGame.fxml"));
 		try {
 			root = loader.load();
 			controller = loader.getController();

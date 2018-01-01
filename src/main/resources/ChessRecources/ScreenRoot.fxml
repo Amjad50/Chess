@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Chess.Controllers.ScreenRootController"
+            prefHeight="800.0" prefWidth="800.0"
+            fx:id="root">
+
+    <bottom>
+        <Label fx:id="footer" alignment="BOTTOM_LEFT" text="**There is no Computer mode (Just play ALONE!)" BorderPane.alignment="CENTER_LEFT">
+            <BorderPane.margin>
+                <Insets left="20.0" />
+            </BorderPane.margin>
+        </Label>
+    </bottom>
+
+</BorderPane>

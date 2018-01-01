@@ -10,6 +10,7 @@ import java.io.IOException;
 
 public class MultiPlayerScreenController extends Controller{
 
+
 	@FXML
 	void initialize(){
 

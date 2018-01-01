@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.transform.*?>
+<?import javafx.scene.effect.*?>
+
+<?import javafx.scene.layout.Pane?>
+<Pane prefWidth="100" prefHeight="100" id='_root' xmlns:fx="http://javafx.com/fxml" xmlns:fxsvg="http://efxclipse.org/fxml-svg">
+	<children>
+		<!-- Unhandled type 'SvgMetadataElement' -->
+		<fx:define>
+		</fx:define>
+		<Group
+			opacity="1.0"
+			id="layer2"
+			>
+			<children>
+				<SVGPath
+					content="m 50,4.944651 c -6.529332,0 -11.817796,5.288464 -11.817796,11.817796 0,2.629461 0.856789,5.052109 2.30447,7.03159 -5.761176,3.308983 -9.690593,9.483781 -9.690593,16.604004 0,5.997532 2.777182,11.345083 7.120222,14.860879 -8.863347,3.131716 -21.892468,16.397192 -21.892468,39.796429 h 67.95233 c 0,-23.399237 -13.029121,-36.664713 -21.892468,-39.796429 4.34304,-3.515794 7.120222,-8.863347 7.120222,-14.860879 0,-7.120223 -3.929417,-13.295021 -9.690593,-16.604004 1.447681,-1.979481 2.30447,-4.402129 2.30447,-7.03159 C 61.817796,10.233115 56.529332,4.944651 50,4.944651 Z"
+					opacity="1"
+					strokeLineCap="ROUND"
+					strokeWidth="4.43167353"
+					id="path3833"
+					>
+					<fill>
+						<Color>
+							<red>0.0</red>
+							<green>0.0</green>
+							<blue>0.0</blue>
+						</Color>
+					</fill>
+					<stroke>
+						<Color>
+							<red>0.0</red>
+							<green>0.0</green>
+							<blue>0.0</blue>
+						</Color>
+					</stroke>
+				</SVGPath>
+			</children>
+		</Group>
+	</children>
+</Pane>

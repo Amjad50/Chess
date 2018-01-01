@@ -1,0 +1,29 @@
+group = "Chess"
+version = "1.0"
+
+buildscript {
+    dependencies {
+        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+    }
+    repositories {
+        mavenCentral()
+    }
+
+}
+
+apply plugin : "java"
+apply plugin: 'javafx-gradle-plugin'
+
+jfx {
+    mainClass = 'Chess.Main'
+    vendor = 'Amjad'
+    copyAdditionalAppResourcesToJar = true
+    additionalAppResources = 'D:\\Development\\Java\\Chess\\src\\main\\resources'
+}
+
+
+jar  {
+    manifest {
+        attributes 'Main-Class': 'Chess.Main'
+    }
+}

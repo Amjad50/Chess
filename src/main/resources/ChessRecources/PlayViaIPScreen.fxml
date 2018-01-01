@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" vgap="20.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chess.Controllers.PlayViaIPScreenController">
+   <Label fx:id="errorMessage" layoutX="260.0" layoutY="128.0" textFill="RED" GridPane.halignment="CENTER" />
+   <HBox alignment="CENTER" prefWidth="500.0" spacing="20.0" GridPane.rowIndex="1">
+      <children>
+          <TextField fx:id="ipAdress" focusTraversable="false" promptText="IP address" text="localhost" HBox.hgrow="ALWAYS" />
+         <Label contentDisplay="CENTER" text=":" HBox.hgrow="NEVER">
+            <HBox.margin>
+               <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-13.0" />
+            </HBox.margin>
+            <font>
+               <Font name="Amethyst Regular" size="24.0" />
+            </font></Label>
+          <TextField fx:id="port" focusTraversable="false" prefWidth="150.0" promptText="port" text="545" />
+      </children>
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+   </HBox>
+    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#connect" prefWidth="250.0" text="Connect" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+        <font>
+            <Font name="Alien Encounters" size="24.0" />
+        </font>
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+      <opaqueInsets>
+         <Insets bottom="20.0" left="20.0" right="20.0" />
+      </opaqueInsets>
+    </Button>
+    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#back" prefWidth="250.0" text="Back" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+        <font>
+            <Font name="Alien Encounters" size="24.0" />
+        </font>
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+    </Button>
+   <Label fx:id="connectLabel" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

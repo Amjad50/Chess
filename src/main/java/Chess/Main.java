@@ -2,7 +2,6 @@ package Chess;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -17,12 +16,13 @@ public class Main extends Application {
 	}
 
 	private void loadMainStage(Stage primaryStage) throws IOException {
-		scene = new Scene(FXMLLoader.load(getClass().getResource("/Chess/ScreenRoot.fxml")));
+		scene = new Scene(FXMLLoader.load(getClass().getResource("/ChessRecources/ScreenRoot.fxml")));
 		primaryStage.setScene(scene);
 		primaryStage.sizeToScene();
 		primaryStage.setTitle("Chess");
 		primaryStage.sizeToScene();
 		primaryStage.setResizable(false);
+		System.out.println("aa");
 	}
 
 	public static void main(String... args) {

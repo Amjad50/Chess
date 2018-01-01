@@ -20,16 +20,18 @@ public class ScreenRootController {
 
 	@FXML
 	void initialize() throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Chess/MainScreen.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/ChessRecources/MainScreen.fxml"));
 		gridPanes[0] = loader.load();
+		System.out.println("done 0");
 		((Controller)loader.getController()).init(this);
-		loader = new FXMLLoader(getClass().getResource("/Chess/MultiplayerScreen.fxml"));
+		loader = new FXMLLoader(getClass().getResource("/ChessRecources/MultiPlayerScreen.fxml"));
 		gridPanes[1] = loader.load();
+		System.out.println("done 1");
 		((Controller)loader.getController()).init(this);
-		loader = new FXMLLoader(getClass().getResource("/Chess/PlayAndHostScreen.fxml"));
+		loader = new FXMLLoader(getClass().getResource("/ChessRecources/PlayAndHostScreen.fxml"));
 		gridPanes[2] = loader.load();
 		((Controller)loader.getController()).init(this);
-		loader = new FXMLLoader(getClass().getResource("/Chess/PlayViaIPScreen.fxml"));
+		loader = new FXMLLoader(getClass().getResource("/ChessRecources/PlayViaIPScreen.fxml"));
 		gridPanes[3]= loader.load();
 		((Controller)loader.getController()).init(this);
 		((BorderPane)root).setCenter(gridPanes[0]);

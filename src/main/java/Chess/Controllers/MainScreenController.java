@@ -18,7 +18,7 @@ public class MainScreenController extends Controller{
 	}
 
 	public void Multiplayer() throws IOException{
-		setCenter(1);
+		setCenter(1);   //sets the Screen to Screen id 1 => multiplayer screen
 	}
 
 	public void singlePlayer() {
