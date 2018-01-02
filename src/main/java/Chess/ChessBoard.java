@@ -24,7 +24,7 @@ public class ChessBoard {
 			null,            null,              null,              null,             null,            null,              null,              null,
 			null,            null,              null,              null,             null,            null,              null,              null,
 			null,            null,              null,              null,             null,            null,              null,              null,
-			null,            null,              null,              null,             null,            null,              null,              null,
+			null,            null,              null,              null,             null,            new King(false),              null,              null,
 			new Pawn(true),  new Pawn(true),    new Pawn(true),    new Pawn(true),   new Pawn(true),  new Pawn(true),    new Pawn(true),    new Pawn(true),
 			new Rook(true),  new Knight(true),  new Bishop(true),  new Queen(true),  new King(true),  new Bishop(true),  new Knight(true),  new Rook(true)
 	};
@@ -97,6 +97,7 @@ public class ChessBoard {
 		System.err.println("moving from  " + from + " to  " + to);
 		ChessPiece piece = boxes[to].getPiece();
 		ChessBox playingBoxh = boxes[from];
+		playingBoxh.getPiece().moveTo(getXonBoard(from), getYonBoard(to));
 		if (piece != null) {
 			if (piece instanceof King) {
 				disableBoard();
@@ -104,7 +105,6 @@ public class ChessBoard {
 			System.out.println(piece + " down!");
 			delete(piece);
 		}
-		playingBoxh.getPiece().moveTo(getXonBoard(to), getYonBoard(to));
 		playingBoxh.getPiece().setCurrent(to);
 		boxes[to].setPiece(playingBoxh.getPiece());
 		playingBoxh.setPiece(null);
@@ -115,8 +115,8 @@ public class ChessBoard {
 
 	void disableBoard() {
 		FlowPane p = new FlowPane();
+		p.setMaxSize(200,100);
 		Text l = new Text("YOU WIN!!!!");
-		p.setPrefSize(800, 800);
 		p.setBackground(new Background(new BackgroundFill(Color.VIOLET, CornerRadii.EMPTY, Insets.EMPTY)));
 		l.setTextAlignment(TextAlignment.CENTER);
 		l.setFont(Font.font("Tempus Sans ITC", FontWeight.BOLD, 40));
