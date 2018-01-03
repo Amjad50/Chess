@@ -1,9 +1,15 @@
 package Chess.Pieces;
 
 import Chess.ChessBoard;
+import javafx.animation.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Node;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.MoveTo;
+import javafx.scene.shape.Path;
+import javafx.scene.shape.PathElement;
+import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.Vector;
@@ -67,8 +73,13 @@ public abstract class ChessPiece extends Group {
 	}
 
 	public void moveTo(double otherX, double otherY) {
-		setLayoutX(otherX);
-		setLayoutY(otherY);
+		Timeline timeline = new Timeline();
+		KeyValue kvX = new KeyValue(this.layoutXProperty(), otherX);
+		KeyValue kvY = new KeyValue(this.layoutYProperty(), otherY);
+		KeyFrame kfX = new KeyFrame(Duration.millis(500), kvX);
+		KeyFrame kfY = new KeyFrame(Duration.millis(500), kvY);
+		timeline.getKeyFrames().addAll(kfX, kfY);
+		timeline.play();
 	}
 
 	//Getters and setters start::***************************************************

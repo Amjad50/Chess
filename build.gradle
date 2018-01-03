@@ -1,29 +1,112 @@
-group = "Chess"
-version = "1.0"
+apply plugin: 'java'
+apply plugin: 'application'
 
-buildscript {
-    dependencies {
-        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+mainClassName = 'Chess.Main'
+
+def javaFxHome = "${System.properties['java.home']}";
+//There seems to be an issue with Gradle detecting the JDK.
+//So, we have to help a wee bit to find the ant-javafx.jar
+//This may be different on your system.
+def antJavaFxJar = "$javaFxHome/../lib/ant-javafx.jar"
+
+def vendor = 'Amjad'
+def version = '1.0'
+def title = 'Chess'
+
+configurations {
+    //we do not want to have jfxrt.jar in the classpath when creating the jar,
+    //therefore a seperate configuration is required
+    providedCompile
+}
+
+//this one works with file dependencies. If you prefer
+//e.g. Maven, feel free to change.
+def libFolder = 'lib'
+def includePattern = '*.jar'
+
+dependencies {
+    providedCompile files("$javaFxHome/lib/jfxrt.jar")
+    compile fileTree(dir: libFolder, include: includePattern)
+}
+
+compileJava {
+    //add required JavaFX libs to compile classpath
+    sourceSets.main.compileClasspath += configurations.providedCompile
+}
+
+run {
+    //add required JavaFX libs to runtime classpath
+    classpath += configurations.providedCompile
+}
+
+//ant configuration for creating double-clickable, self-contained JAR
+ant.importBuild 'javafx.xml'
+ant.antJavaFxJar = antJavaFxJar
+ant.mainClassName = mainClassName
+ant.fallbackClassName = 'com.javafx.main.NoJavaFXFallback'
+ant.distDir = libsDir
+ant.distName = jar.archiveName;
+ant.resourceDir = libFolder
+ant.resourceIncludePattern = includePattern
+ant.applicationTitle = title
+ant.applicationVendor = vendor
+ant.applicationVersion = version
+ant.applicationClasses = sourceSets.main.output.classesDir
+ant.applicationResources = sourceSets.main.output.resourcesDir
+
+//clear existing task actions and call ant task
+jar {
+    // reset actions
+    actions = []
+
+    doLast {
+        javafxjar.execute(); // <-- the task described in javafx.xml
     }
-    repositories {
-        mavenCentral()
+
+//create some smarter looking start scripts
+    startScripts {
+        doLast {
+            unixScript.text = "java -jar ../lib/$jar.archiveName"
+            windowsScript.text = "java -jar ..\\lib\\$jar.archiveName"
+        }
     }
+
 
 }
 
-apply plugin : "java"
-apply plugin: 'javafx-gradle-plugin'
-
-jfx {
-    mainClass = 'Chess.Main'
-    vendor = 'Amjad'
-    copyAdditionalAppResourcesToJar = true
-    additionalAppResources = 'D:\\Development\\Java\\Chess\\src\\main\\resources'
-}
 
 
-jar  {
-    manifest {
-        attributes 'Main-Class': 'Chess.Main'
-    }
-}
+//group = "Chess"
+//version = "1.0"
+//mainClassName = 'Chess.Main'
+//
+//buildscript {
+//    dependencies {
+//        classpath group: ''
+//        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+//    }
+//    repositories {
+//        mavenCentral()
+//    }
+//
+//}
+//
+//apply plugin : 'java'
+//apply plugin: 'application'
+//apply plugin: 'javafx-gradle-plugin'
+//
+//jfx {
+//    mainClass = 'Chess.Main'
+//    vendor = 'Amjad'
+//    copyAdditionalAppResourcesToJar = true
+//    additionalAppResources = 'D:\\Development\\Java\\Chess\\src\\main\\resources'
+//}
+//
+//
+//jar  {
+//    manifest {
+//        attributes 'Main-Class': 'Chess.Main'
+//    }
+//}
+
+
